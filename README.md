@@ -1,8 +1,8 @@
 
-# test-sql-2017
+# test-sql-2020
 Тестовое задание для программиста postgresql
 
-Tender.pro, 2017
+Tender.pro, 2020
 
 Написать хранимую функцию определения победивших предложений
 
@@ -41,4 +41,4 @@ License
 
 This project is under the **MIT** License. See the [LICENSE](LICENSE) file for the full license text.
 
-Copyright (c) 2017 [Tender.Pro](http://www.tender.pro)
+Copyright (c) 2020 [Tender.Pro](http://www.tender.pro)
