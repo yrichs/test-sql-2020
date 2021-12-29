@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  db:
+    container_name: tender_db
+    build:
+      context: ./db
+    restart: always
+    environment:
+        POSTGRES_PASSWORD: tender1234 
+        POSTGRES_DB: tender
+        POSTGRES_USER: tender
+        PGDATA: "/etc/postgresql/data/pgdata"
+    volumes:
+      - ./db/init:/docker-entrypoint-initdb.d
+      - ./db/data:/etc/postgresql/data/
+    ports:
+      - 15432:5432
+

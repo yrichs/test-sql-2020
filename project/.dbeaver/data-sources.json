@@ -1,0 +1,60 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-17e0166f53a-5c4a5afb214efe88": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "tender",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "15432",
+				"database": "tender",
+				"url": "jdbc:postgresql://localhost:15432/tender",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			},
+			"custom-properties": {
+				"SQLEditor.outputPanel.autoShow": "false"
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-jdbc-17e0166f53a-5c4a5afb214efe88": {
+			"tender": {
+				"public": {
+					":tender_product": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202112281905\"><entities><data-source id=\"postgres-jdbc-17e0166f53a-5c4a5afb214efe88\"><entity id=\"1\" name=\"tender_product\" fq-name=\"public.tender_product\" order=\"0\" color-bg=\"128,64,32\" x=\"491\" y=\"85\"><path name=\"public\"/><path name=\"tender\"/></entity><entity id=\"2\" name=\"bid\" fq-name=\"public.bid\" order=\"1\" border-width=\"3\" x=\"110\" y=\"89\"><path name=\"public\"/><path name=\"tender\"/></entity></data-source></entities><relations><relation name=\"bif_fkey_tender_product\" fq-name=\"public.bid.bif_fkey_tender_product\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/></relations></diagram>"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Разработка",
+			"color": "255,255,255",
+			"description": "База данных для разработки",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
